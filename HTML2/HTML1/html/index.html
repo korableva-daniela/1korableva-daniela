@@ -128,79 +128,63 @@
                         <td>Шотландская национальная галерея, Эдинбург</td>
                     </tr>
                 </table>
-  <div id = "form" class="text-left order-md-4">
-
-            <label>
-            Имя:<br>
-            <input name="field-name-1"  required/ >
-            </label><br/>
-            <label>
-                Текстовое поле email:<br>
-                <input name="field-email" type="email" required pattern="*@*"/>
-            </label><br/>
-            <label>
-                Текстовое поле даты рождения:<br>
-                <input name="field-date"  type="date"  required/>
-            </label><br/>
-            Пол:<br>
-            <label><input type="radio" checked="checked" name="radio-group-1"/>Мужской</label>
-            <label><input type="radio" name="radio-group-1"/>Женский</label>
-            <label><input type="radio" checked="checked" name="radio-group-1"/>Не определился </label><br>
-            Количество конечностей:<br/>
-         <div class="form_radio_btn">
-	<input id="radio-1" type="radio" name="radio" value="1" checked>
-	<label for="radio-1"> 1</label>
-</div>
- 
-<div class="form_radio_btn">
-	<input id="radio-2" type="radio" name="radio" value="2">
-	<label for="radio-2"> 2</label>
-</div>
- 
-<div class="form_radio_btn">
-	<input id="radio-3" type="radio" name="radio" value="3">
-	<label for="radio-3">3</label>
-</div>
- 
-<div class="form_radio_btn">
-	<input id="radio-4" type="radio" name="radio" value="4" checked>
-	<label for="radio-4">4</label>
-</div>
- 
-<div class="form_radio_btn">
-	<input id="radio-5" type="radio" name="radio" value="5">
-	<label for="radio-5">5</label>
-</div>
- 
-<div class="form_radio_btn">
-	<input id="radio-6" type="radio" name="radio" value="6">
-	<label for="radio-6">6</label>
-</div>
- 
-<div class="form_radio_btn">
-	<input id="radio-7" type="radio" name="radio" value="7" checked>
-	<label for="radio-7">7</label>
-</div>
- <label> Сверхспособности:
-                <br>
-                <select name="field-name-4[]"
-                    multiple="multiple">
-                    <option value="Значение1">Бессмертие</option>
-                    <option value="Значение2" selected="selected">Прохождение через стены</option>
-                    <option value="Значение3" selected="selected">Левитация</option>
-                    <option value="Значение3" selected="selected">есть и не толстеть</option>
-                </select>
-            </label><br/>
-Биография:<br>
+  <a id="form"> </a>
+<form class = "text-left">
+1) <label>
+    Имя:<br />
+    <input name="field-name-1"
+    value="Анна" required/>
+  </label><br />
+2) <label>
+    email:<br />
+    <input name="field-email"
+    value="my@example.com"
+    type="email" required pattern="*@*"/>
+</label><br />
+3) <label>
+    Дата рождения:<br />
+    <input name="field-date"
+    value="2004-01-03"
+    type="date" />
+</label><br />
+4) Выберите пол: <br />
+    <label><input type="radio" name="group-1" value="gen1" checked="checked"/> женский </label>
+    <label><input type="radio" name="group-1" value="gen2"/> мужской </label> <br />
+5) Выберите количество конечностей: <br />
+    <label><input type="radio" name="group-2" value="count1"/> 1</label>
+    <label><input type="radio" name="group-2" value="count2"/> 2</label>
+    <label><input type="radio" name="group-2" value="count3"/> 3</label>
+    <label><input type="radio" name="group-2" value="count4" checked="checked"/> 4</label>
+    <label><input type="radio" name="group-2" value="count5"/> 5</label>
+    <label><input name="group-2" type="radio" value="count6"/> 6 и больше
+    </label> <br />
+6) <label>
+Выберите сверхспособности: <br />
+    <select name="field-sup" multiple="multiple">
+    <option value="num1" selected="selected">левитация</option>
+    <option value="num2"> бессмертие </option>
+    <option value="num3"> прохождение сквозь стены </option>
+    </select>
+    </label> <br />
+7) 
 <label>
-                <textarea name="field-name-2"  required/></textarea>
-            </label><br/>
-            Чекбокс:<br>
-            <label><input type="checkbox" name="check-1"  required>C контрактом ознакомлен</label><br/>
-            <input type="submit" value="Отправить" / >
-        </form>
-         </div>
-      </div>
+    Биография:<br />
+    <textarea name="field-name-2">Родилась в Уганде.</textarea>
+</label><br />
+8) 
+<label>
+    Выбранный бегемот:<br />
+    <textarea name="field-name-2">Например, блестящий в полоску 1500 кг</textarea>
+</label><br />
+9)
+<label>
+    Чекбокс: <br />
+    <input type="checkbox" name="check"  required> C контрактом ознакомлен(а)
+</label> <br />
+10)
+  <input type="submit" value="Отправить"/>
+  </form>
+</div>
 </div>
    <footer>
        
